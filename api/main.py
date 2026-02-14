@@ -15,7 +15,7 @@ MAX_SIZE = 91 * 1024
 VALID_EXTENSIONS = {".csv", ".json", ".txt"}
 TOKEN = "o16hrb3objnq5ic8"
 
-@app.post("")
+@app.post("/upload")
 async def upload(
     file: UploadFile = File(...),
     x_upload_token_3056: str = Header(None)
